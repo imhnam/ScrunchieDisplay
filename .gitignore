@@ -3,3 +3,4 @@ node_modules/
 .DS_Store
 migrate-to-supabase.js
 supabase_policies.sql
+supabase-config.js
