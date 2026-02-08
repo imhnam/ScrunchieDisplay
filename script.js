@@ -44,39 +44,41 @@ tailwind.config = {
 };
 
 // Collection Data (Fallback)
+const STORAGE_URL = 'https://rpassssxkjzzwqhsyhlb.supabase.co/storage/v1/object/public/scrunchie-images/library/';
+
 let collections = {
     blue: [
-        'library/bl1.jpg',
-        'library/bl2.jpg',
-        'library/bl3.jpg',
-        'library/bl4.jpg',
-        'library/bl5.jpg'
+        STORAGE_URL + 'bl1.jpg',
+        STORAGE_URL + 'bl2.jpg',
+        STORAGE_URL + 'bl3.jpg',
+        STORAGE_URL + 'bl4.jpg',
+        STORAGE_URL + 'bl5.jpg'
     ],
     green: [
-        'library/gr1.jpg',
-        'library/gr2.jpg',
-        'library/gr3.jpg'
+        STORAGE_URL + 'gr1.jpg',
+        STORAGE_URL + 'gr2.jpg',
+        STORAGE_URL + 'gr3.jpg'
     ],
     pink: [
-        'library/pi1.jpg',
-        'library/pi2.jpg',
-        'library/pi3.jpg',
-        'library/pi4.jpg',
-        'library/pi5.jpg',
-        'library/pi6.jpg',
-        'library/pi7.jpg',
-        'library/pi8.jpg'
+        STORAGE_URL + 'pi1.jpg',
+        STORAGE_URL + 'pi2.jpg',
+        STORAGE_URL + 'pi3.jpg',
+        STORAGE_URL + 'pi4.jpg',
+        STORAGE_URL + 'pi5.jpg',
+        STORAGE_URL + 'pi6.jpg',
+        STORAGE_URL + 'pi7.jpg',
+        STORAGE_URL + 'pi8.jpg'
     ],
     yellow: [
-        'library/ye1.jpg',
-        'library/ye2.jpg',
-        'library/ye3.jpg',
-        'library/ye4.jpg',
-        'library/ye5.jpg',
-        'library/ye6.jpg',
-        'library/ye7.jpg',
-        'library/ye8.jpg',
-        'library/ye9.jpg'
+        STORAGE_URL + 'ye1.jpg',
+        STORAGE_URL + 'ye2.jpg',
+        STORAGE_URL + 'ye3.jpg',
+        STORAGE_URL + 'ye4.jpg',
+        STORAGE_URL + 'ye5.jpg',
+        STORAGE_URL + 'ye6.jpg',
+        STORAGE_URL + 'ye7.jpg',
+        STORAGE_URL + 'ye8.jpg',
+        STORAGE_URL + 'ye9.jpg'
     ]
 };
 
@@ -228,7 +230,7 @@ function renderCollectionsGrid(dbCollections) {
         <div class="reveal delay-${(index + 1) * 100} relative group rounded-3xl overflow-hidden shadow-2xl h-[500px] active w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
             <img alt="${col.title}"
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                src="${col.cover_image || collections[col.key]?.[0] || 'library/all1.jpg'}" />
+                src="${col.cover_image || collections[col.key]?.[0] || 'https://rpassssxkjzzwqhsyhlb.supabase.co/storage/v1/object/public/scrunchie-images/library/all1.jpg'}" />
             <div
                 class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent flex flex-col justify-end p-6">
                 <div class="transform transition-all duration-500 translate-y-2 group-hover:translate-y-0">
