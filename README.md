@@ -21,18 +21,3 @@ Dự án này là Static HTML/JS nên có thể deploy dễ dàng lên:
 -   **Vercel / Netlify:** Kéo thả folder hoặc kết nối Git repo.
 -   **GitHub Pages:** Push lên branch `gh-pages` hoặc main.
 
-## Cấu hình Supabase
-
-Thông tin cấu hình nằm trong `supabase-config.js`. Đảm bảo bạn đã thiết lập đúng URL và Anon Key.
-
-**Lưu ý bảo mật:**
--   File `migrate-to-supabase.js` chứa Service Role Key (quyền admin cao nhất) nên **KHÔNG** được commit lên Git.
--   Chỉ commit `supabase-config.js` chứa Anon Key (công khai).
-
-## Cấu trúc thư mục
-
--   `index.html`: Trang chủ.
--   `admin.html`: Trang quản trị.
--   `script.js`: Logic trang chủ (fetch dữ liệu Supabase, hiệu ứng).
--   `admin.js`: Logic trang admin.
--   `library/`: Chứa ảnh gốc (fallback).
