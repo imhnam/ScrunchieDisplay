@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Trang Chủ Tiệm Scrunchie - Pastel Green &amp; Video Showcase</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;family=Nunito:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body transition-colors duration-300 selection:bg-primary selection:text-white">
+    <nav
+        class="sticky top-0 z-50 bg-surface-light/80 dark:bg-surface-dark/90 backdrop-blur-md shadow-sm dark:shadow-green-900/20 transition-colors duration-300 border-b border-green-100 dark:border-green-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <span class="material-symbols-outlined text-primary text-3xl">spa</span>
+                    <h1 class="font-display text-2xl md:text-3xl font-bold text-slate-700 dark:text-green-100">Tiệm
+                        Scrunchie</h1>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-semibold"
+                        href="#">Trang chủ</a>
+                    <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-semibold"
+                        href="#video-showcase">Góc Chill</a>
+                    <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-semibold"
+                        href="#collections">Bộ sưu tập</a>
+                    <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-semibold"
+                        href="#about">Về chúng tôi</a>
+                    <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-semibold"
+                        href="#contact">Liên hệ</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 dark:text-slate-300 hover:text-primary focus:outline-none">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="relative overflow-hidden">
+        <div
+            class="absolute inset-0 z-0 opacity-15 dark:opacity-5 bg-[url('library/all1.jpg')] bg-cover bg-center mix-blend-overlay bg-green-200">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left space-y-6 animate-float" style="animation-duration: 8s;">
+                    <span
+                        class="inline-block px-4 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-primary-dark dark:text-green-300 font-bold text-sm tracking-wide uppercase border border-green-200 dark:border-green-800">Thủ
+                        công &amp; Tinh tế</span>
+                    <h2 id="hero-title"
+                        class="font-display text-5xl md:text-7xl text-slate-800 dark:text-white leading-tight">
+                        Nâng niu <br /> <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-olive">mái
+                            tóc</span> của bạn
+                    </h2>
+                    <p id="hero-desc"
+                        class="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-lg mx-auto md:mx-0">
+                        Những chiếc scrunchie tone xanh pastel dịu mát, được may đo tỉ mỉ, mang đến cảm giác thư thái và
+                        vẻ đẹp nhẹ nhàng cho mỗi ngày.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                        <a class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg shadow-green-300/50 hover:shadow-green-400/50 hover:-translate-y-1 transition-all duration-300"
+                            href="#collections">
+                            Khám phá ngay
+                        </a>
+                        <a class="bg-white dark:bg-surface-dark text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 px-8 py-3 rounded-full font-bold text-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-all duration-300"
+                            href="#about">
+                            Tìm hiểu thêm
+                        </a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-4 bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/30 transition-colors duration-500">
+                    </div>
+                    <img alt="Collection of colorful handmade scrunchies"
+                        class="relative rounded-3xl shadow-2xl shadow-green-900/10 border-4 border-white dark:border-slate-800 transform -rotate-2 group-hover:rotate-0 transition-transform duration-700 ease-out"
+                        src="library/all12.jpg" />
+                    <div class="absolute -bottom-6 -right-6 bg-surface-light dark:bg-surface-dark p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce border border-green-50 dark:border-green-900"
+                        style="animation-duration: 3s;">
+                        <span class="material-symbols-outlined text-yellow-400">star</span>
+                        <div>
+                            <p class="font-bold text-slate-800 dark:text-white">5.0/5.0</p>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Đánh giá cao nhất</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-20 bg-green-50/50 dark:bg-background-dark/50 overflow-hidden relative" id="video-showcase">
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-96 h-96 bg-accent-olive/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h3 class="font-display text-4xl md:text-5xl text-slate-800 dark:text-white mb-4">Khoảnh khắc mềm mại
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">Ngắm nhìn những chiếc scrunchie
+                    xinh xắn trong từng chuyển động nhẹ nhàng.</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent-olive mx-auto rounded-full mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="reveal-left delay-100 relative group cursor-pointer rounded-2xl overflow-hidden shadow-xl shadow-green-100 dark:shadow-none aspect-[9/16] md:aspect-[3/4]">
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none"
+                        src="library/video3.mp4" autoplay muted loop playsinline></video>
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                        <p class="text-white font-bold text-lg">Cách tạo kiểu tóc búi</p>
+                        <p class="text-green-100 text-sm">Với scrunchie size đại</p>
+                    </div>
+                </div>
+                <div
+                    class="reveal-scale delay-200 relative group cursor-pointer rounded-2xl overflow-hidden shadow-2xl shadow-green-200 dark:shadow-none aspect-[9/16] md:aspect-[3/4] md:-mt-8 md:mb-8 border-4 border-white dark:border-slate-700">
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none"
+                        src="library/video2.mp4" autoplay muted loop playsinline></video>
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                        <span class="bg-primary text-white text-xs px-2 py-1 rounded mb-2 inline-block">Mới nhất</span>
+                        <p class="text-white font-bold text-xl">Bộ sưu tập Mùa Thu</p>
+                        <p class="text-green-100 text-sm">Cảm hứng từ thiên nhiên</p>
+                    </div>
+                </div>
+                <div
+                    class="reveal-right delay-300 relative group cursor-pointer rounded-2xl overflow-hidden shadow-xl shadow-green-100 dark:shadow-none aspect-[9/16] md:aspect-[3/4]">
+                    <video
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none"
+                        src="library/video3.mp4" autoplay muted loop playsinline></video>
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300">
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
+                        <p class="text-white font-bold text-lg">Daily Lookbook</p>
+                        <p class="text-green-100 text-sm">Nhẹ nhàng đi học, đi làm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white dark:bg-surface-dark transition-colors duration-300" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h3 class="font-display text-4xl text-slate-800 dark:text-white mb-4">Tại sao chọn chúng mình?</h3>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent-olive mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="reveal delay-100 bg-background-light dark:bg-background-dark p-8 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 border border-transparent hover:border-green-200 dark:hover:border-green-800">
+                    <div
+                        class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">volunteer_activism</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-800 dark:text-white">Thủ công 100%</h4>
+                    <p class="text-slate-600 dark:text-slate-400">Mỗi sản phẩm là tâm huyết, được may tỉ mỉ bằng đôi bàn
+                        tay khéo léo để đảm bảo độ bền và đẹp nhất.</p>
+                </div>
+                <div
+                    class="reveal delay-200 bg-background-light dark:bg-background-dark p-8 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 border border-transparent hover:border-green-200 dark:hover:border-green-800">
+                    <div
+                        class="w-16 h-16 bg-lime-100 dark:bg-lime-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-accent-olive text-3xl">spa</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-800 dark:text-white">Chất liệu mềm mại</h4>
+                    <p class="text-slate-600 dark:text-slate-400">Sử dụng vải lụa, voan, cotton cao cấp, an toàn cho
+                        tóc, không gây gãy rụng hay đau đầu khi cột lâu.</p>
+                </div>
+                <div
+                    class="reveal delay-300 bg-background-light dark:bg-background-dark p-8 rounded-2xl text-center hover:shadow-xl transition-shadow duration-300 border border-transparent hover:border-green-200 dark:hover:border-green-800">
+                    <div
+                        class="w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-primary-dark text-3xl">palette</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-800 dark:text-white">Tone màu thư giãn</h4>
+                    <p class="text-slate-600 dark:text-slate-400">Sắc xanh mint tươi mới, xanh sage dịu nhẹ, phù hợp với
+                        phong cách thanh lịch và tự nhiên.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="py-24 bg-gradient-to-b from-background-light to-white dark:from-background-dark dark:to-surface-dark transition-colors duration-300 overflow-hidden"
+        id="collections">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center md:text-left reveal">
+                <h3 class="font-display text-5xl text-slate-800 dark:text-white mb-3">Bộ sưu tập theo màu sắc</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-lg">Lựa chọn tone màu yêu thích cho ngày thêm rạng rỡ
+                </p>
+            </div>
+            <div id="collections-grid" class="flex flex-wrap justify-center gap-6">
+                <div class="reveal delay-100 relative group rounded-3xl overflow-hidden shadow-2xl h-[500px]">
+                    <img alt="Sắc Xanh Dương Bình Yên Scrunchies"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        src="library/bl1.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent flex flex-col justify-end p-6">
+                        <div class="transform transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                            <span
+                                class="bg-blue-400/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block backdrop-blur-sm">Bán
+                                chạy nhất</span>
+                            <h4 class="text-2xl font-display text-white mb-1 drop-shadow-lg">Sắc Xanh Dương</h4>
+                            <p class="text-blue-100 mb-4 line-clamp-2 text-sm opacity-90">Vẻ đẹp tươi mới của bầu trời.
+                            </p>
+                            <button data-collection="blue"
+                                class="bg-white text-blue-600 font-bold px-4 py-2 rounded-full hover:bg-blue-400 hover:text-white transition-colors w-full flex items-center justify-center gap-2 group-hover:shadow-lg shadow-white/20 text-sm">
+                                Xem ngay <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal delay-200 relative group rounded-3xl overflow-hidden shadow-2xl h-[500px]">
+                    <img alt="Sắc Xanh Lá Tươi Mát Scrunchies"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        src="library/gr2.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent flex flex-col justify-end p-6">
+                        <div class="transform transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                            <span
+                                class="bg-green-500/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block backdrop-blur-sm">Thiên
+                                nhiên</span>
+                            <h4 class="text-2xl font-display text-white mb-1 drop-shadow-lg">Sắc Xanh Lá</h4>
+                            <p class="text-green-100 mb-4 line-clamp-2 text-sm opacity-90">Sự tươi mát từ cỏ cây hoa lá.
+                            </p>
+                            <button data-collection="green"
+                                class="bg-white text-green-600 font-bold px-4 py-2 rounded-full hover:bg-green-500 hover:text-white transition-colors w-full flex items-center justify-center gap-2 group-hover:shadow-lg shadow-white/20 text-sm">
+                                Xem ngay <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal delay-300 relative group rounded-3xl overflow-hidden shadow-2xl h-[500px]">
+                    <img alt="Sắc Hồng Ngọt Ngào Scrunchies"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        src="library/pi4.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent flex flex-col justify-end p-6">
+                        <div class="transform transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                            <span
+                                class="bg-pink-400/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block backdrop-blur-sm">Mới
+                                về</span>
+                            <h4 class="text-2xl font-display text-white mb-1 drop-shadow-lg">Sắc Hồng Ngọt Ngào</h4>
+                            <p class="text-pink-100 mb-4 line-clamp-2 text-sm opacity-90">Dịu dàng nữ tính với sắc hồng.
+                            </p>
+                            <button data-collection="pink"
+                                class="bg-white text-pink-500 font-bold px-4 py-2 rounded-full hover:bg-pink-400 hover:text-white transition-colors w-full flex items-center justify-center gap-2 group-hover:shadow-lg shadow-white/20 text-sm">
+                                Xem ngay <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal delay-400 relative group rounded-3xl overflow-hidden shadow-2xl h-[500px]">
+                    <img alt="Họa Tiết Vintage Scrunchies"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                        src="library/ye1.jpg" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent flex flex-col justify-end p-6">
+                        <div class="transform transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                            <span
+                                class="bg-yellow-400/90 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block backdrop-blur-sm">Rực
+                                rỡ</span>
+                            <h4 class="text-2xl font-display text-white mb-1 drop-shadow-lg">Sắc Vàng Rực Rỡ</h4>
+                            <p class="text-yellow-100 mb-4 line-clamp-2 text-sm opacity-90">Nắng vàng ngày hè tươi đẹp.
+                            </p>
+                            <button data-collection="yellow"
+                                class="bg-white text-yellow-600 font-bold px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition-colors w-full flex items-center justify-center gap-2 group-hover:shadow-lg shadow-white/20 text-sm">
+                                Xem ngay <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 relative overflow-hidden bg-white dark:bg-background-dark">
+        <div class="absolute inset-0 bg-green-50 dark:bg-green-900/10"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10 reveal">
+            <span class="material-symbols-outlined text-5xl text-primary mb-6 opacity-80">format_quote</span>
+            <p class="font-display text-3xl md:text-5xl text-slate-700 dark:text-slate-200 leading-normal mb-8">
+                "Một chút sắc xanh dịu dàng trên tóc, một chút bình yên nho nhỏ cho ngày mới thêm nhẹ nhàng."
+            </p>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-primary p-0.5 shadow-md">
+                    <img alt="Avatar khách hàng" class="w-full h-full object-cover rounded-full"
+                        src="library/all3.jpg" />
+                </div>
+                <div class="text-left">
+                    <p class="font-bold text-slate-800 dark:text-white text-lg">Kiều Nga</p>
+                    <p class="text-sm text-primary font-semibold">Khách hàng thân thiết</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="absolute top-10 left-10 w-48 h-48 bg-green-200/40 rounded-full blur-3xl mix-blend-multiply dark:mix-blend-overlay">
+        </div>
+        <div
+            class="absolute bottom-10 right-10 w-56 h-56 bg-lime-200/40 rounded-full blur-3xl mix-blend-multiply dark:mix-blend-overlay">
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-surface-dark transition-colors duration-300" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-white dark:bg-background-dark rounded-3xl p-8 md:p-16 shadow-2xl shadow-green-100 dark:shadow-none overflow-hidden relative border border-green-100 dark:border-slate-700">
+                <div
+                    class="absolute top-0 right-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+                    <div>
+                        <h3 class="font-display text-4xl text-slate-800 dark:text-white mb-4">Đừng bỏ lỡ ưu đãi!</h3>
+                        <p class="text-slate-600 dark:text-slate-300 mb-8 text-lg">Đăng ký nhận tin để nhận ngay mã giảm
+                            giá <span class="font-bold text-primary">15%</span> cho đơn hàng scrunchie đầu tiên và cập
+                            nhật mẫu mới.</p>
+                        <form class="flex flex-col sm:flex-row gap-4">
+                            <input
+                                class="flex-1 px-6 py-3 rounded-full border border-green-200 dark:border-slate-600 bg-green-50 dark:bg-slate-800 text-slate-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 outline-none transition-shadow"
+                                placeholder="Nhập email của bạn..." type="email" />
+                            <button
+                                class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-primary/30 transition-all transform hover:-translate-y-1"
+                                type="button">
+                                Đăng ký
+                            </button>
+                        </form>
+                    </div>
+                    <div class="flex flex-col gap-6 text-slate-600 dark:text-slate-300">
+                        <h4 class="font-bold text-xl text-slate-800 dark:text-white">Liên hệ với chúng mình</h4>
+                        <div class="flex items-center gap-4 group">
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">phone</span>
+                            </div>
+                            <p class="font-medium">0384 158 862</p>
+                        </div>
+                        <div class="flex items-center gap-4 group">
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                <span class="material-symbols-outlined">email</span>
+                            </div>
+                            <p class="font-medium">kieunga17082k5@gmail.com</p>
+                        </div>
+                        <div class="flex gap-4 mt-2">
+                            <a class="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all shadow-lg shadow-blue-200"
+                                href="https://www.facebook.com/nguyen.nga.339376">
+                                <span class="font-bold text-lg">f</span>
+                            </a>
+                            <a class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all shadow-lg shadow-blue-200"
+                                href="https://zalo.me/0384158862">
+                                <span class="font-bold text-xs uppercase">Zalo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer
+        class="bg-white dark:bg-background-dark py-12 border-t border-green-100 dark:border-slate-800 transition-colors duration-300">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-2xl">spa</span>
+                <span class="font-display text-xl font-bold text-slate-700 dark:text-green-100">Tiệm Scrunchie</span>
+            </div>
+            <div class="text-sm text-slate-500 dark:text-slate-400">
+                © 2026 Tiệm Scrunchie. Thiết kế bởi Hoài Nam.
+            </div>
+            <div class="flex gap-6 text-sm font-semibold text-slate-500 dark:text-slate-400">
+                <a class="hover:text-primary transition-colors" href="#">Chính sách</a>
+                <a class="hover:text-primary transition-colors" href="/admin.html">Quản trị</a>
+                <a class="hover:text-primary transition-colors" href="#">Ship hàng</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Gallery Modal -->
+    <div id="gallery-modal" class="fixed inset-0 z-[100] hidden" aria-modal="true" role="dialog">
+        <!-- Backdrop (clickable to close) -->
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-sm transition-opacity opacity-0 cursor-pointer"
+            id="gallery-backdrop">
+        </div>
+
+        <!-- Modal Content -->
+        <div class="absolute inset-0 flex items-center justify-center p-4 overflow-hidden pointer-events-none">
+            <!-- Close Button -->
+            <button id="gallery-close"
+                class="absolute top-4 right-4 md:top-8 md:right-8 w-12 h-12 flex items-center justify-center text-white hover:text-primary transition-colors z-[101] pointer-events-auto bg-black/40 hover:bg-black/60 rounded-full backdrop-blur-md">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+
+            <!-- Navigation Buttons (Outside Swiper) -->
+            <button
+                class="swiper-button-prev-custom absolute left-4 md:left-8 w-12 h-12 flex items-center justify-center text-white z-[101] pointer-events-auto bg-black/40 hover:bg-primary/80 rounded-full backdrop-blur-md transition-colors">
+                <span class="material-symbols-outlined text-2xl">chevron_left</span>
+            </button>
+            <button
+                class="swiper-button-next-custom absolute right-4 md:right-8 w-12 h-12 flex items-center justify-center text-white z-[101] pointer-events-auto bg-black/40 hover:bg-primary/80 rounded-full backdrop-blur-md transition-colors">
+                <span class="material-symbols-outlined text-2xl">chevron_right</span>
+            </button>
+
+            <!-- Swiper Container -->
+            <div class="relative flex flex-col items-center justify-center">
+                <div
+                    class="swiper mySwiper w-[85vw] max-w-[500px] h-[70vh] max-h-[700px] pointer-events-auto rounded-2xl overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <!-- Slides injected by JS -->
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <p class="text-white/70 mt-4 text-sm font-medium pointer-events-auto">
+                    Tự động chuyển sau 3 giây
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
