@@ -1,3 +1,20 @@
+:root {
+    --primary: #8da684;
+    --primary-dark: #6b7f63;
+    --accent-olive: #b2c4a7;
+    --background-light: #f9fbf8;
+    --surface-light: #ffffff;
+    --text-light: #2c3e2d;
+    --primary-glow: rgba(141, 166, 132, 0.4);
+}
+
+.dark {
+    --background-dark: #0f1a0f;
+    --surface-dark: #1a2a1a;
+    --text-dark: #e8f0e8;
+    --primary-glow: rgba(141, 166, 132, 0.2);
+}
+
 .font-display {
     font-family: 'Dancing Script', cursive;
 }
@@ -19,6 +36,47 @@
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Background Video Utility */
+.bg-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.bg-video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(0.65) saturate(1.1);
+}
+
+.bg-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(15, 26, 15, 0.4), rgba(15, 26, 15, 0.7));
+    backdrop-blur: 1px;
+}
+
+.hero-glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 /* Swiper Custom Styles */
